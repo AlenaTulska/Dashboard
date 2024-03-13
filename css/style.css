@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    border-collapse: collapse;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+@font-face {
+    font-family:'Nunito Sans';
+    src:url(../fonts/NunitoSans_10pt-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    margin: 0 auto;
+    width: 1800px;
+    font-family:'Nunito Sans';
+}
+
+.aside-section {
+    width:100px;
+    box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
+    background: #efebff;
+    border-radius: 0 8px 8px 0;
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    font-size: 16 px;
+    
+}
+
+.aside-section:hover {
+    width: 300px;
+}
+
+.wrapper {
+    margin-top: 37px;
+    padding-left: 100px;
+    transition: padding 1s linear;
+}
+.aside-section:hover +.wrapper {
+    padding-left: 300px;
+}
+.aside-logo {
+   display: flex;
+   flex-shrink: 0;
+    margin-top: 37px;
+
+}
+.aside-logo a {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    font-size: 24px;
+    margin-left: 27px;
+    gap: 40px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.aside-list {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 52px;
+    margin-left: 33px;
+    gap: 15px;
+}
+.aside-list a {
+    display: flex;
+    flex-shrink: 0;
+    gap: 40px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.aside-link span{
+    display: flex;
+    flex-shrink: 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    transform: rotate(45deg);
+    line-height: 10px;
+    overflow: hidden;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(-45deg);
+    fill: none;
+    transition: transform 0.5s linear;
+}
+
+.aside-link:hover .icon {
+    transform: rotate(-45deg) scale(1.7);
+   
+}
+
+.title-icon {
+    width: 37px;
+    height: 37px;
+    fill: none
+}
+
+
+h1 {
+    font-size: 24px;
+}
+
+.table-section {
+    background-color: #fff; 
+    padding: 60px 0;
+}
+
+.table-data {
+    width: 1100px;
+    background-color: #ffffff;       
+    border: 1px solid #e4e4ef;
+    border-radius: 8px;
+        
+}
+
+.table-data,
+.table-data th,
+.table-data td {    
+    padding: 18px 16px;   
+    box-shadow: inset 0 -1px 0 0 #e4e4ef
+}
+
+.table-data th {
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;        
+    width: 400px;
+}
+
+
+.table-data th + th + th {
+    width: 158px;
+}
+
+.table-data .last-item {
+    width: 144px;
+    text-align: center;
+    padding: 14px 16px;    ;
+    background: #fff;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 4px 24px;
+    width: 83px;    
+    background: #f8f9fb;
+    
+   }
+
+.btn.green {
+    color: #31aa27;
+    background: #ebf6eb;
+}
+
+.btn.blue {
+    color: #605dec;
+    background: #ededfe;
+}
+
+.btn.orange {
+    color: #e99518;
+    background-color: #fff4e4;
+}
+
+.btn.red {
+    color: #f93232;
+    background-color: #fff0f0;
+}
+
+.btn.grey {
+    color: #bdbcdb;
+    background-color: #f8f9fb;
+}
